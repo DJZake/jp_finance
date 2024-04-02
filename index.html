@@ -14,21 +14,47 @@
         <ul class="menu" >
             <li><a href="#">Home</a></li>
             <li><a href="#section1" >About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#section2">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     <main>
-        <img class="banner" src="img/banner.jpg" alt="">
+        <!-- bootstrap -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- <img class="banner" src="img/banner.jpg" alt=""> -->
         <br><br>
-        <br><br><br>
         <!-- about us -->
-        <h1 class ="#section1">ABOUT US</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deleniti sunt ipsam, id quos, cumque veniam accusamus architecto vitae a harum! Accusantium possimus natus eum voluptatibus provident alias amet mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatibus cupiditate quidem est quasi necessitatibus! Dolore error dolorum eveniet molestias pariatur, ex labore. A impedit doloribus porro minima officia tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati facere rem quod explicabo distinctio cum beatae nostrum quae odit excepturi, necessitatibus esse consequuntur aliquam. Quasi saepe soluta distinctio veritatis!Loremlor\\\ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias magnam praesentium aspernatur unde aliquam asperiores, nesciunt officiis corrupti quia maxime repudiandae fugit assumenda hic ducimus magni quam ex iusto!</p>
+        <h1 id ="section1">ABOUT US</h1>
+        <p>*India's No. 1 Most Trusted Financial Services Brand 2023 for 7th Year in a row by TRA's Brand Trust Report. With a resolute focus on providing customers with the best services, Muthoot Finance has managed to earn the trust of millions.</p>
         <br><br><br>
         <!-- services -->
 
-        <h1>Apply for Gold loan</h1>
+        <h1 id="section2">Apply for Gold loan</h1>
         <br><br>
         <div class="d-grid gap-2 col-1 mx-auto">
         <button type="button" class="btn btn-success">Gold loan</button>
@@ -36,7 +62,7 @@
         <br><br><br>
         
         <!-- Contact -->
-        <h1 class="#contact">Contact Us</h1>
+        <h1 id="contact">Contact Us</h1>
         <br>
         <p class="footi">Phone No. 1234567890</p>
         <p class="footi"><a href="">Email</a></p>
