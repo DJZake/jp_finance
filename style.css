@@ -7,6 +7,10 @@ header{
     display: inline;
 }
 
+img{
+    padding: -5%;
+}
+
 .menu{
     color: white;
     list-style: none;
@@ -64,5 +68,8 @@ h1{
         width: 100%;
         height: 250px;
     }
-    
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
 }
