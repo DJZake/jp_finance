@@ -8,6 +8,10 @@ img{
     padding: -5%;
 }
 
+main{
+    background-color: azure;
+}
+
 .menu{
     color: white;
     list-style: none;
@@ -32,7 +36,7 @@ h1{
   margin: 0 auto;
 }
  footer{
-    background-color: cadetblue;
+    background-color: rgba(112, 176, 219, 0.453);
     height: 100px;
  }
 
@@ -55,14 +59,13 @@ h1{
  }
 
 .container-fluid{
-    padding: 0;
-    background-color:azure;
+    padding: 0%;
+    background-color:rgba(142, 210, 255, 0.302);
 }
-
  .navbar-collapse{
     margin-left: 65%;
  }
-
+ 
  @media screen and (max-width: 850px){
 
     .logo{
