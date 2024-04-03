@@ -54,7 +54,10 @@ h1{
     height: 500px;
  }
 
-
+.container-fluid{
+    padding: 0;
+    background-color:azure;
+}
 
  .navbar-collapse{
     margin-left: 65%;
