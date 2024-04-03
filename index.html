@@ -76,7 +76,8 @@
         <p>here u can apply for loan with the lowest intreat rate in the market and low emi option which is aimed to help people grow their organization and get out of the rat race for that we belive everyone should be able to the access money and all hence thank you for wasting time.</p>
         <br>
         <div class="d-grid gap-2 col-1 mx-auto">
-        <button type="button" class="btn btn-success">Gold loan</button>
+        <div id="liveAlertPlaceholder"></div>
+  <button type="button" class="btn btn-success" id="liveAlertBtn">Gold Loan</button>
     </div>
         <br><br>
         
@@ -86,13 +87,42 @@
         <p class="footi">Phone No. 1234567890</p>
         <p class="footi"><a href="">Email</a></p>
         <p class="footi">Address: abc road</p>
+        <div class="contact-right">
+          <form action="https://formsubmit.co/djzake@proton.me" method="POST" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <input type="text" name="Subject" placeholder="Your Subject" >
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2" value="sent">Submiit</button>
+          </form>
     </main>
-
+<br> <br>
     <footer>
         <p class="foot">&copy; 2021 JP FINANCE</p>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('You are not eligible for gold loan!', 'success')
+  })
+}
+    </script>
 </body>
 </html>
